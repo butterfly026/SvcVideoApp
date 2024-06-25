@@ -1,0 +1,47 @@
+library router;
+
+import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_video_community/global/web/webview_page.dart';
+import 'package:flutter_video_community/modules/content/more/work_more_page.dart';
+import 'package:flutter_video_community/modules/content/search/work_search_page.dart';
+import 'package:flutter_video_community/modules/content/video/video_play_page.dart';
+import 'package:flutter_video_community/modules/favor/favor_page.dart';
+import 'package:flutter_video_community/modules/game/game_play_page.dart';
+import 'package:flutter_video_community/modules/index/splash.dart';
+import 'package:flutter_video_community/modules/live/live_room.dart';
+import 'package:flutter_video_community/modules/live/live_room_ios.dart';
+import 'package:flutter_video_community/modules/main/game/withdrawal/withdrawal_record_page.dart';
+import 'package:flutter_video_community/modules/undress/undress_page.dart';
+import 'package:flutter_video_community/modules/undress/undress_record_page.dart';
+import 'package:flutter_video_community/utils/device.dart';
+import '../modules/content/detail/work_detail_page.dart';
+import 'package:flutter_video_community/modules/main/comics/read/comics_read_page.dart';
+import 'package:flutter_video_community/modules/main/comics/search/comics_search_page.dart';
+import 'package:flutter_video_community/modules/main/game/activity/game_activity_page.dart';
+import 'package:flutter_video_community/modules/main/game/deposit/deposit_page.dart';
+import 'package:flutter_video_community/modules/main/game/details/game_details_page.dart';
+import 'package:flutter_video_community/modules/main/game/withdrawal/withdrawal_page.dart';
+import 'package:flutter_video_community/modules/main/community/details/community_details_page.dart';
+import 'package:flutter_video_community/modules/main/community/community_page.dart';
+import 'package:flutter_video_community/modules/main/community/release/release_post_page.dart';
+import 'package:flutter_video_community/modules/main/main_page.dart';
+import 'package:flutter_video_community/modules/main/mine/coupon/coupon_page.dart';
+import 'package:flutter_video_community/modules/order/order_history_page.dart';
+import 'package:flutter_video_community/modules/main/mine/recharge/coin/coin_recharge_page.dart';
+import 'package:flutter_video_community/modules/main/mine/recharge/vip/vip_recharge_page.dart';
+import 'package:flutter_video_community/modules/main/mine/settings/account/credentials/scan_credentials_page.dart';
+import 'package:flutter_video_community/modules/main/mine/settings/account/retrieve_account_page.dart';
+import 'package:flutter_video_community/modules/main/mine/settings/settings_page.dart';
+import 'package:flutter_video_community/modules/main/mine/share/share_page.dart';
+import 'package:flutter_video_community/modules/main/novel/read/novel_read_page.dart';
+import 'package:flutter_video_community/modules/main/novel/search/novel_search_page.dart';
+import 'package:flutter_video_community/modules/main/tv/search/tv_series_search_page.dart';
+import 'package:flutter_video_community/modules/main/tv/tv_series_page.dart';
+import 'package:flutter_video_community/modules/main/video/app/video_app_page.dart';
+import 'package:flutter_video_community/modules/main/video/search/video_search_page.dart';
+import 'package:get/get.dart';
+
+
+part 'src/app_router.dart';
+part 'src/observers.dart';

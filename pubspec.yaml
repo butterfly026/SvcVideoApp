@@ -1,0 +1,198 @@
+name: flutter_video_community
+description: A new Flutter project.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version.dart and build number for your application.
+# A version.dart number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version.dart and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version.dart numbers below to
+# the latest version.dart available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # https://pub.dev/packages/get
+  get: ^4.6.6
+  # https://pub.dev/packages/bloc
+  bloc: ^8.1.2
+  # https://pub.dev/packages/flutter_bloc
+  flutter_bloc: ^8.1.3
+  # https://pub.dev/packages/equatable
+  equatable: ^2.0.5
+  # https://pub.dev/packages/shared_preferences
+  shared_preferences: ^2.2.1
+  # https://pub.dev/packages/flutter_screenutil
+  flutter_screenutil: ^5.9.0
+  # https://pub.dev/packages/dio
+  dio: ^5.4.0
+  # https://pub.dev/packages/flutter_smart_dialog
+  flutter_smart_dialog: ^4.9.4
+  # https://pub.dev/packages/oktoast
+  oktoast: ^3.4.0
+  # https://pub.dev/packages/logger
+  logger: ^2.0.2+1
+  # https://pub.dev/packages/pull_to_refresh_flutter3
+  pull_to_refresh_flutter3: ^2.0.2
+  modal_bottom_sheet: ^3.0.0-pre
+  intl: 0.19.0
+  # https://pub.dev/packages/dotted_border
+  dotted_border: ^2.0.0+3
+  # https://pub.dev/packages/wechat_assets_picker
+  wechat_assets_picker: 9.0.0-dev.2
+  # https://pub.dev/packages/permission_handler
+  permission_handler: ^10.4.3
+
+  # https://pub.dev/packages/flutter_picker
+  flutter_picker: ^2.1.0
+  cached_network_image: ^3.3.0
+  event_bus: ^2.0.0
+  openinstall_flutter_plugin: ^2.4.1
+
+  qr_flutter: ^4.1.0
+  qr_code_scanner: ^1.0.1
+  device_info_plus: ^9.1.1
+  flutter_inappwebview: ^6.0.0
+  webview_flutter: ^4.5.0
+#  webview_flutter_web: ^0.2.2+4
+  get_it: ^7.6.7
+
+  universal_platform: ^1.0.0+1
+#  image_picker_for_web: ^3.0.1
+  extended_image: ^8.2.0
+  easy_refresh: ^3.3.4
+  flutter_widget_from_html: ^0.14.7
+  flutter_spinkit: ^5.2.0
+  url_launcher: ^6.1.14
+  encrypt: ^5.0.3
+
+  # https://pub.dev/packages/android_id
+  android_id: ^0.3.4
+  image_gallery_saver: ^1.7.1
+  marquee: ^2.2.3
+  card_swiper: ^3.0.1
+ # fijkplayer: ^0.11.0
+  video_player: ^2.8.2
+  chewie: ^1.7.4
+  auto_orientation: ^2.3.1
+  flutter_dynamic_icon: ^2.1.0
+  crypto: ^3.0.3
+  #native_video_player: ^1.3.1
+  #flutter_vlc_player: ^7.4.1
+  # video_player_rtmp_ext: ^0.1.2
+
+  # https://pub.dev/packages/flutter_staggered_grid_view
+  flutter_staggered_grid_view: ^0.7.0
+  # https://pub.dev/packages/easy_rich_text
+#  easy_rich_text: ^2.0.0
+  r_upgrade: ^0.4.2
+  installed_apps: ^1.4.0
+  city_pickers: ^1.3.0
+#  city_pickers:
+#    git:
+#      url: https://github.com/Fun-Pepper/city_pickers.git
+
+  flutter_floating: ^1.0.8
+  readmore: ^2.1.0
+
+  # umeng_apm_sdk: any
+  umeng_apm_sdk:
+    path: ./apm/
+  umeng_common_sdk: any
+  audio_session: ^0.1.18
+  image_downloader_web: ^2.0.4
+  image_picker_web: ^3.1.1
+  zxing2: ^0.2.1
+  image: ^4.1.6
+  image_picker: ^1.0.7
+  pointer_interceptor: ^0.10.1
+  visibility_detector: ^0.4.0+2
+  sp_util: ^2.0.3
+  flutter_app_icons: ^0.0.9  
+  basic_utils: ^5.7.0
+  pointycastle: ^3.7.4
+  media_kit: ^1.1.10                             # Primary package.
+  media_kit_video: ^1.2.4                        # For video rendering.
+  media_kit_libs_video: ^1.0.4 
+  safe_device: ^1.1.4
+  vpn_check: ^0.2.3
+
+dependency_overrides:
+  http: ^0.13.3
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^3.0.1
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+#    - assets/data/
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages

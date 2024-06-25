@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+
+<body>
+    <h1>JavaScript Handlers</h1>
+    <button onclick="toFlutterPage()">toFlutterPage</button>
+    <button onclick="getDataFromFlutter()">getDataFromFlutter</button>
+    <button onclick="sendDataToFlutter()">sendDataToFlutter</button>
+    <a href="https://www.baidu.com" target="_blank">新标签页</a>
+    <script>
+        window.addEventListener("flutterInAppWebViewPlatformReady", function (event) {
+            // window.flutter_inappwebview.callHandler('getDataFromFlutter')
+            //     .then(function (result) {
+            //         // print to the console the data coming
+            //         // from the Flutter side.
+            //         console.log(JSON.stringify(result));
+            //         window.flutter_inappwebview
+            //             .callHandler('sendDataToFlutter', 1, true, ['bar', 5], { foo: 'baz' });
+            //     });
+        });
+
+        function toFlutterPage() {
+            window.flutter_inappwebview.callHandler('toFlutterPage', '/mine/settings');
+        }
+
+        function getDataFromFlutter() {
+            window.flutter_inappwebview.callHandler('getDataFromFlutter')
+                .then(function (result) {
+                    console.log(JSON.stringify(result));
+                    alert(JSON.stringify(result));
+                });
+        }
+
+        function sendDataToFlutter() {
+            window.flutter_inappwebview
+                .callHandler('sendDataToFlutter', 1, true, ['bar', 5], { foo: 'baz' });
+        }
+    </script>
+</body>
+
+</html>ƒ

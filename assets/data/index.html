@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebView Test</title>
+</head>
+<body>
+<h1 style="font-size:60px;">Flutter WebView交互示例</h1>
+<p id="token" style="font-size:38px;">Token: </p>
+<p id="deviceid" style="font-size:38px;">Device ID: </p>
+<button style="width: 300px; height: 100px;" onclick="openExternalBrowser('https://www.baidu.com?target=_blank')">在外部浏览器中打开</button>
+
+<script>
+    function setToken(token) {
+        document.getElementById('token').textContent = 'Token: ' + token;
+    }
+
+    function setDeviceId(deviceId) {
+        document.getElementById('deviceid').textContent = 'Device ID: ' + deviceId;
+    }
+
+    function openExternalBrowser(url) {
+        // 尝试在新窗口中打开URL
+        window.open(url, '_blank');
+    }
+</script>
+</body>
+</html>
